@@ -16,10 +16,25 @@
     </div>
   </div>
   <body>
-    <div class="section">
+    <div class="large-section">
       <img src="./files/gmunclogo.png" class="center" style="width: 500px; padding-top: 50px;">
-      <a href="./about"><p class="med-bold">Learn More<span class="material-symbols-outlined" style="top: 5px; position: relative;">chevron_right</span></p></a>
+      <a href="./about"><p class="small-bold">Learn More<span class="material-symbols-outlined" style="top: 5px; position: relative;">chevron_right</span></p></a>
     </div>
+    <p class="large-bold">MUN. Gunn Edition.</p>
+    <div style="display: flex; justify-content: center;">
+    <div class="small-section">
+      <a href="./about"><p class="medium-bold">About GMUNC<span class="material-symbols-outlined" style="top: 2px; position: relative;">chevron_right</span></p></a>
+      <p class="small">
+        The Henry M. Gunn Model United Nations Conference is a day-long, student led high school conference. It is an excellent opportunity for both novice and experienced delegates. Newcomers get a chance to be introduced to the world of MUN, while veteran delegates can sharpen their skills in more advanced crisis and specialized committees. 
+      </p>
+    </div>
+    <div class="small-section">
+      <a href="./conference"><p class="medium-bold">Conference Details<span class="material-symbols-outlined" style="top: 2px; position: relative;">chevron_right</span></p></a>
+      <p class="small">
+        GMUNC XI will take place at Henry M. Gunn High School on October 19, 2024. It is a smaller event geared towards preparation for local collegiate-run conferences. We offer a variety of different committees including general assemblies and crisis committees.
+      </p>
+    </div>
+  </div>
   </body>
 </html>
 
@@ -27,13 +42,13 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
   body {
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: "Inter", sans-serif;
     color: black;
   }
 
-  .section {
-    height: 500px;
+  .large-section {
+    height: 400px;
     box-sizing: border-box;
     font-size: 20px;
     font-weight: 400;
@@ -47,8 +62,50 @@
     display: grid;
   }
 
-  .med-bold {
+  .small-section {
+    width: 48%;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: rgb(245, 245, 245);
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .small {
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .small-bold {
     font-weight: 600;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .medium-bold {
+    font-weight: 600;
+    font-size: 30px;
+    position: relative;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .large-bold {
+    font-weight: 700;
+    font-size: 50px;
     text-align: center;
     position: relative;
     text-decoration: none;
