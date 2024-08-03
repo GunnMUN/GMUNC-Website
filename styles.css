@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  color: black;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+
+}
+
+.large-section {
+  height: 400px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: rgb(220, 220, 246);
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  margin: 10px;
+  display: grid;
+}
+
+.medium-section {
+  width: 98%;
+  box-sizing: border-box;
+  font-size: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: rgb(245, 245, 245);
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small-section {
+  width: 48%;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: rgb(245, 245, 245);
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small {
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.small-bold {
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+}
+
+.medium-bold {
+  font-weight: 600;
+  font-size: 30px;
+  position: relative;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.large-bold {
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.center {
+  margin: auto;
+  position: relative;
+  vertical-align: middle;
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  float: right;
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.buffer {
+  height: 50px;
+}
+
+.background {
+  background-image: url("./files/gmunclogo.png");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.background-text {
+  font-family: "Inter", sans-serif;
+  font-size: 300px;
+  font-weight: 800;
+  float: left;
+  text-align: left;
+  margin: 0px 0px -194px 0px;
+}
+
+.project-link {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: black;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0)),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.project-link:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
