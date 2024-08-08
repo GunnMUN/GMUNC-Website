@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GMUNC | Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <a href="./"
+    ><img
+      src="../files/Emblem_Black_Large.png"
+      width="60"
+      height="48"
+      style="display: inline-block"
+  /></a>
+  <div id="topnav" class="topnav">
+    <div id="links">
+      <a href="./" class="active">Home</a>
+      <a href="./about">About</a>
+      <a href="./committees">Committees</a>
+      <a href="./registration">Registration</a>
+      <a href="./conference">Conference</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <body>
+    <p class="large-bold">Contact Us.</p>
+    <div class="wrap">
+      <div class="medium-section">
+        <p class="medium-bold">
+          Fill out this form or email us at gunnmodelunclub@gmail.com - specific
+          committee emails can be found on the committees tab.
+        </p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea name="message" placeholder="Message" required></textarea>
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
+          <button type="submit">Submit Form</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      float: left;
+      margin: 20px;
+    }
 
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: "Inter", sans-serif;
+    }
+
+    button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #000000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: "Inter", sans-serif;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #e6e0e0;
+      color: black;
+    }
+  </style>
+</html>
