@@ -45,6 +45,7 @@
       >
     </div>
     <p class="large-bold">MUN. Gunn Edition.</p>
+    <p class="large-bold" id="timer">MUN. Gunn Edition.</p>
     <div class="wrap">
       <div class="small-section">
         <a href="./about"
@@ -122,3 +123,27 @@
     </div>
   </body>
 </html>
+
+<script>
+  var countDownDate = new Date("Oct 19, 2024 9:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "GMUNC time!";
+  }
+}, 1000);
+</script>
