@@ -45,7 +45,7 @@
       >
     </div>
     <p class="large-bold">MUN. Gunn Edition.</p>
-    <p class="large-bold" id="timer">MUN. Gunn Edition.</p>
+    <p class="large-bold" id="timer"></p>
     <div class="wrap">
       <div class="small-section">
         <a href="./about"
@@ -138,7 +138,7 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
   
   if (distance < 0) {
