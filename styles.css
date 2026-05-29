@@ -15,6 +15,7 @@ body {
 }
 
 .large-section {
+  place-items: center;
   height: 400px;
   box-sizing: border-box;
   font-size: 20px;
